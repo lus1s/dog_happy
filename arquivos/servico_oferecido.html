@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <script src="../js/script.js"></script>
+</head> 
 <body>
-    <form action="">
-        <input type="checkbox" name="" id=""> Tosa <br>
-        <input type="checkbox" name="" id=""> Banho <br>
-        <input type="checkbox" name="" id=""> Aparar unhas <br>
-        <input type="checkbox" name="" id=""> Vacinação <br> <br>
+    <form onsubmit="return validar()" action="">
+        <input type="checkbox" name="servico" id="servico" value="tosa"> Tosa <br>
+        <input type="checkbox" name="servico" id="servico" value="banho"> Banho <br>
+        <input type="checkbox" name="servico" id="servico" value="aparar unhas"> Aparar unhas <br>
+        <input type="checkbox" name="servico" id="servico" value="Vacinas"> Vacinação <br> <br>
         
         <input type="submit" value="Cadastrar">
     </form>
