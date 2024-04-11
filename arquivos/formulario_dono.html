@@ -6,14 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit="return validar()" action="exibir.php">
+    <form onsubmit="return validar()"> 
         <ul>
-            <li>Nome:</li>
-                <input type="text" name="dono_pet" id="nome"> <br><br>
+            <li>Dono do pet:</li>
+                <input type="text" name="dono_pet" id="dono_pet"> <br><br>
+            <li>Telefone do dono:</li>
+                <input type="text" name="telefone_dono" id="telefone_dono"> <br><br>
+            <li>CPF:</li>
+                <input type="text" name="cpf_dono" id="cpf_dono"> <br><br>
+            <li>senha:</li>
+                <input type="password" name="senha_dono" id="senha_dono"> <br><br>
             <li>Email:</li>
-                <input type="text" name="email_dono" id="email"> <br><br>
-            <li>Senha:</li>
-                <input type="password" name="senha" id="senha"> <br><br>
-
+                <input type="email" name="email_dono" id="email_dono"> <br><br>
+            <input type="submit" value="Cadastrar"> 
 </body>
 </html>
