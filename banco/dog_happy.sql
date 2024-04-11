@@ -7,6 +7,9 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 SET NAMES utf8mb4;
 
+CREATE DATABASE `bd_doguinhos` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `bd_doguinhos`;
+
 DROP TABLE IF EXISTS `tb_pet`;
 CREATE TABLE `tb_pet` (
   `id_pet` int(11) NOT NULL AUTO_INCREMENT,
@@ -23,4 +26,4 @@ CREATE TABLE `tb_pet` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
--- 2024-04-11 18:27:58
+-- 2024-04-11 18:43:45
