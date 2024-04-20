@@ -8,8 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagens/balloon-heart.svg" type="image/x-icon">
-    <script src="./js/script.js"></script>
-    <title>Serviço à ser prestado</title>
+    <title>Sobre o sistema</title>
 </head>
 
 <body>
@@ -21,23 +20,24 @@
                         alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     HAPPY DOG
 
-                    <div> <a href="./sobre.html">Sobre o Sistema</a></div>
+                    <div> <a href="./index.php">voltar</a></div>
                 </a>
             </div>
         </nav>
     </div>
-    <form onsubmit="return validacao3()" action="dados_session.php">
-        <h3>Escolha um serviço</h3>
+    <p>
+        De maneira resumida, este projeto se trata de um pequeno e simplificado sistema
+        que deve ser utilizado em um Petshop, com a finalidade de manter controle sobre a entrada e saida de animas
+        referentes aos serviços oferecidos.
+    </p>
+    <p>
+        Projeto realizado por: <br>
         <ul>
-            <input type="hidden" name="origem" value="3">
-            <input type="checkbox" name="servico" id="tosa" value="tosa"> Tosa <br>
-            <input type="checkbox" name="servico" id="banho" value="banho"> Banho <br>
-            <input type="checkbox" name="servico" id="aparacao" value="aparar unhas"> Aparar unhas <br>
-            <input type="checkbox" name="servico" id="vacina" value="vacina"> Vacinação <br> 
-            <div id="error"></div> <br>
-            <input type="submit" value="Cadastrar" class="btn btn-outline-info">
+            <li>Ana Júlia Mercês Passos Martins</li>
+            <li>Luís Carlos dos Santos</li>
+            <li>Pedro Henrique Reis Ferreira</li>
         </ul>
-    </form>
+    </p>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagens/balloon-heart.svg" type="image/x-icon">
     <script src="./js/script.js"></script>
-    <title>Serviço à ser prestado</title>
+    <title>Dados do pet</title>
 </head>
 
 <body>
@@ -17,8 +17,7 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./imagens/adoravel-cachorrinho-fofo-ilustracao-de-cachorro-de-desenho-animado-para-mercadorias-infantis-e-muito-mais_549857-8306.avif"
-                        alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="./imagens/adoravel-cachorrinho-fofo-ilustracao-de-cachorro-de-desenho-animado-para-mercadorias-infantis-e-muito-mais_549857-8306.avif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     HAPPY DOG
 
                     <div> <a href="./sobre.html">Sobre o Sistema</a></div>
@@ -26,16 +25,21 @@
             </div>
         </nav>
     </div>
-    <form onsubmit="return validacao3()" action="dados_session.php">
-        <h3>Escolha um serviço</h3>
+    <form onsubmit="return validacao2()" action="dados_session.php">
+        <h3>Dados referentes ao Pet</h3>
         <ul>
-            <input type="hidden" name="origem" value="3">
-            <input type="checkbox" name="servico" id="tosa" value="tosa"> Tosa <br>
-            <input type="checkbox" name="servico" id="banho" value="banho"> Banho <br>
-            <input type="checkbox" name="servico" id="aparacao" value="aparar unhas"> Aparar unhas <br>
-            <input type="checkbox" name="servico" id="vacina" value="vacina"> Vacinação <br> 
+            <li>Nome do Pet:</li>
+            <input type="text" name="nome_pet" id="nome_pet"> <br><br>
+            <li>Identificação do pet:</li>
+            <input type="text" name="identificacao" id="identificacao"> <br><br>
+            <li>Especie:</li>
+            <input type="text" name="especie" id="especie"><br><br>
+            <li>Raça:</li>
+            <input type="text" name="raca" id="raca"> <br><br>
+             
+            <input type="hidden" name="origem" value="2">
             <div id="error"></div> <br>
-            <input type="submit" value="Cadastrar" class="btn btn-outline-info">
+            <input type="submit" value="Próximo" class="btn btn-outline-info">
         </ul>
     </form>
 </body>

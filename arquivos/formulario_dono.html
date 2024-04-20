@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imagens/balloon-heart.svg" type="image/x-icon">
+    <title>Dados Referentes ao Dono</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="p-3 mb-2 bg-info text-dark">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagens/adoravel-cachorrinho-fofo-ilustracao-de-cachorro-de-desenho-animado-para-mercadorias-infantis-e-muito-mais_549857-8306.avif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    HAPPY DOG
+
+                    <div> <a href="./sobre.html">Sobre o Sistema</a></div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <form onsubmit="return validacao()" action="dados_session.php">
+        <h3>Dados referentes ao dono</h3>
+        <ul>
+            <li>Dono do pet: </li>
+            <input type="text" name="dono_pet" id="dono_pet"> <br><br>
+            <li>Telefone do dono: </li>
+            <input type="text" name="telefone_dono" id="telefone_dono"> <br><br>
+            <li>CPF: </li>
+            <input type="text" name="cpf_dono" id="cpf_dono"> <br><br>
+            <li>Senha: </li>
+            <input type="password" name="senha_dono" id="senha_dono"> <br><br>
+            <li>Email: </li>
+            <input type="email" name="email_dono" id="email_dono"> <br><br>
+            <input type="hidden" name="origem" value="1">
+            <div id="error"></div><br>
+            <input type="submit" value="Próximo" class="btn btn-outline-info">
+        </ul>
+    </form>
+</body>
+
+</html>
